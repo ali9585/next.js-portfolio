@@ -1,0 +1,162 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --app-bg-color: #101630;
+    --app-color-1: #4eacda;
+    --app-color-2: #471dbd;
+    --primary-text-color: #fdfdfb;
+    --secondary-text-color: #858997;
+    --btn-color: linear-gradient(90deg, rgba(78, 172, 218, 1) 0%, rgba(71, 29, 189, 1) 100%);
+    --btn-hover-color: linear-gradient(90deg, rgba(71, 29, 189, 1) 0%, rgba(78, 172, 218, 1) 100%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--app-bg-color);
+}
+
+.header.pc {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 28px;
+}
+
+.header .logo img {
+    width: 76px;
+    height: auto;
+}
+
+.header.pc .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-text-color);
+    gap: 100px;
+}
+
+.header.pc .links .link {
+    color: var(--primary-text-color);
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.header.mobile .icon-wrapper {
+    position: relative;
+    margin-top: 17px;
+    margin-left: 17px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 49px;
+    height: 47px;
+    padding-top: 3px;
+    padding-right: 2px;
+    z-index: 3;
+}
+
+.header.mobile .icon-wrapper.active {
+    padding-right: 5px;
+}
+
+.header.mobile .menu {
+    position: absolute;
+    width: 280px;
+    height: 100%;
+    background: #fff;
+    top: 0;
+    left: 0;
+}
+
+.header.mobile .menu .links {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 114px;
+    margin-left: 29px;
+}
+
+.header.mobile .menu .links .link {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.app-btn {
+    position: relative;
+    padding: 12px 27px;
+    transition: all 0.3s;
+    z-index: 2;
+    user-select: none;
+}
+
+.app-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--btn-color);
+    border-radius: 6px;
+    z-index: -1;
+    transition: all 0.7s;
+    opacity: 1;
+}
+
+.app-btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--btn-hover-color);
+    border-radius: 6px;
+    z-index: -1;
+    transition: all 0.7s;
+    opacity: 0;
+}
+
+.app-btn:hover::before {
+    opacity: 0;
+}
+
+.app-btn:hover::after {
+    opacity: 1;
+}
+
+.app-btn:hover {
+    transform: skewX(6deg);
+}
+
+.app-btn:active {
+    transform: skewX(6deg) scale(0.9);
+}
+
+@media (max-width: 1279px) {
+    .header.pc .links {
+        gap: 58px;
+    }
+}
+
+@media (max-width: 1049px) {
+    .header.pc {
+        display: none;
+    }
+}
+
+@media (min-width: 1049px) {
+    .header.mobile {
+        display: none;
+    }
+}
