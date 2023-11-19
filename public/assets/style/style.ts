@@ -3,9 +3,5 @@ interface Style {
 }
 
 export const styles: Style = {
-    link: {
-        initial: '#fdfdfb',
-        hover: '#4eacda'
-    },
-    appBg: '#101630'
+    
 };
