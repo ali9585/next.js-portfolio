@@ -4,14 +4,9 @@ import Image from 'next/image';
 import { LiaHomeSolid } from "react-icons/lia";
 import { SectionBadge } from "@/app/utils/sectionBadge";
 import { GoArrowDown } from "react-icons/go";
-import { motion, Variant } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 
-type SpinnerVariant = {
-    initial: Variant,
-    rotate: Variant
-}
-
-const spinnerVariants: SpinnerVariant = {
+const spinnerVariants: Variants = {
     initial: {
         rotate: 0
     },
@@ -62,7 +57,7 @@ const Introduction: React.FC = (): JSX.Element => {
                             Different Types of Projects
                             <br />
                             Completed
-                            </p>
+                        </p>
                     </div>
                     <div></div>
                 </div>
