@@ -1,5 +1,7 @@
 import React from 'react';
 import LeftSidebar from '@/app/partials/leftSidebar';
+import Introduction from './components/introduction';
+import About from './components/about';
 
 export const Page: React.FC = (): JSX.Element => {
     return (
@@ -7,9 +9,14 @@ export const Page: React.FC = (): JSX.Element => {
             <div className='left-sidebar-wrapper'>
                 <LeftSidebar />
             </div>
-            <div className='main'>
-            <div className='content'>
+            <div className='centered-sidebar-wrapper'>
+                <LeftSidebar />
             </div>
+            <div className='main'>
+                <div className='content'>
+                    <Introduction />
+                    <About />
+                </div>
             </div>
         </>
     );
