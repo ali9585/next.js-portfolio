@@ -30,7 +30,7 @@
     background-color: var(--app-bg-color);
 }
 
-.hireme-card-wrapper {
+.left-sidebar-wrapper {
     position: fixed;
     width: 350px;
     height: 100vh;
@@ -39,24 +39,20 @@
     align-items: center;
 }
 
-.hireme-card {
+.left-sidebar {
     width: 100%;
     border: 1px solid #565656;
     border-radius: 30px;
-    padding-top: 26px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 20px;
 }
 
-.hireme-card .logo {
+.left-sidebar .logo {
     position: relative;
     font-size: 37px;
     color: var(--text-color);
     font-weight: 600;
 }
 
-.hireme-card .logo::before {
+.left-sidebar .logo::before {
     content: "A";
     position: absolute;
     color: var(--text-color);
@@ -75,26 +71,47 @@
     padding: 8px;
 }
 
-.hireme-card .title {
+.left-sidebar .title {
     font-size: 14px;
     color: var(--text-color);
 }
 
-.hireme-card .my-image {
+.left-sidebar .my-image {
     width: 100%;
     height: 243px;
     object-fit: cover;
     border-radius: 30px;
+    margin-top: 17px;
 }
 
 @media (max-width: 2000px) {
-    .hireme-card-wrapper {
+    .left-sidebar-wrapper {
         width: 400px;
+    }
+
+    .left-sidebar {
+        padding: 50px;
+    }
+}
+
+@media (max-width: 1555px) {
+    .left-sidebar-wrapper {
+        width: 350px;
+    }
+    
+    .left-sidebar {
+        padding: 30px;
+    }
+
+    .left-sidebar .my-image {
+        max-width: 250px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
 @media (max-width: 1326px) {
-    .hireme-card {
+    .left-sidebar {
         padding-top: 26px;
         padding-left: 30px;
         padding-right: 30px;

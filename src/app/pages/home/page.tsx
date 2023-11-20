@@ -5,8 +5,8 @@ export const Page: React.FC = (): JSX.Element => {
     return (
         <>
             <div className='content'>
-                <div className='hireme-card-wrapper'>
-                    <div className='hireme-card'>
+                <div className='left-sidebar-wrapper'>
+                    <div className='left-sidebar'>
                         <div className='flex justify-between'>
                             <h2 className='logo'>Ali</h2>
                             <span className='title'>
