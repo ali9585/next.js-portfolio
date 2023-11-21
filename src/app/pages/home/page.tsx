@@ -2,6 +2,7 @@ import React from 'react';
 import LeftSidebar from '@/app/partials/leftSidebar';
 import Introduction from './components/introduction';
 import About from './components/about';
+import Resume from './components/resume';
 
 export const Page: React.FC = (): JSX.Element => {
     return (
@@ -16,6 +17,7 @@ export const Page: React.FC = (): JSX.Element => {
                 <div className='content'>
                     <Introduction />
                     <About />
+                    <Resume />
                 </div>
             </div>
         </>
