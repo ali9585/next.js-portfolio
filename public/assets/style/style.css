@@ -365,6 +365,104 @@
     background-color: var(--app-color);
 }
 
+.specs .spec.last {
+    padding-bottom: 0px;
+}
+
+.services {
+    margin-top: 180px;
+}
+
+.services .cards {
+    margin-top: 33px;
+}
+
+.services .cards .card {
+    position: relative;
+    border: 1px solid #565656;
+    border-radius: 20px;
+    transition: .3s;
+    position: relative;
+    padding: 44px 48px 41px 48px;
+    margin-bottom: 10px;
+}
+
+.services .cards .card.last {
+    margin-bottom: 0px;
+}
+
+.services .cards .card:hover {
+    border-color: var(--app-color);
+}
+
+.services .cards .card h2 {
+    font-size: 24px;
+    font-weight: 300;
+    color: var(--text-color);
+}
+
+.services .cards .card p {
+    margin-top: 8px;
+    font-size: 14px;
+    color: var(--muted-text-color);
+}
+
+.services .cards .card span {
+    font-size: 12px;
+    color: var(--text-color);
+    text-transform: uppercase;
+    margin-top: 30px;
+    display: inline-block;
+}
+
+.services .cards .card .icon {
+    position: absolute;
+    top: 45px;
+    right: 50px;
+    width: 30px;
+    height: 30px;
+}
+
+.skills {
+    margin-top: 180px;
+}
+
+.skills .item-wrapper {
+    max-width: 174px;
+    width: 100%;
+    margin-top: 33px;
+}
+
+.skills .item-wrapper .item {
+    border: 2px solid #565656;
+    border-radius: 85px;
+    padding: 54px 0 48px 0;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+
+.skills .item-wrapper .item:hover {
+    border-color: var(--app-color);
+}
+
+.skills .item-wrapper .item h1 {
+    font-size: 30px;
+    color: var(--app-color);
+    font-weight: 300;
+    margin-top: 29px;
+}
+
+.skills .skill-name {
+    width: fit-content;
+    font-size: 14px;
+    color: var(--text-color);
+    margin-top: 20px;
+}
+
 @media (max-width: 2000px) {
     .left-sidebar-wrapper {
         width: 400px;
@@ -483,4 +581,39 @@
     .point-to-projects {
         width: fit-content;
     }
+}
+
+@media (max-width: 1023px) {
+    .services .cards .card {
+        padding: 30px 30px 30px 30px;
+    }
+
+    .services .cards .card h2 {
+        font-size: 20px;
+    }
+
+    .services .cards .card p {
+        margin-top: 10px;
+    }
+
+    .services .cards .card span {
+        margin-top: 25px;
+    }
+
+    .services .cards .card .icon {
+        width: 20px;
+        height: 20px;
+        top: 25px;
+        right: 20px;
+    }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+    .services .cards .card {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 640px) {
+
 }

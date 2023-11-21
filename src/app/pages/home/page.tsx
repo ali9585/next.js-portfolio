@@ -3,6 +3,8 @@ import LeftSidebar from '@/app/partials/leftSidebar';
 import Introduction from './components/introduction';
 import About from './components/about';
 import Resume from './components/resume';
+import Services from './components/services';
+import Skills from './components/skills';
 
 export const Page: React.FC = (): JSX.Element => {
     return (
@@ -18,6 +20,8 @@ export const Page: React.FC = (): JSX.Element => {
                     <Introduction />
                     <About />
                     <Resume />
+                    <Services />
+                    <Skills />
                 </div>
             </div>
         </>

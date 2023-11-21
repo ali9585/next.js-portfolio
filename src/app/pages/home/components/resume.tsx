@@ -25,7 +25,7 @@ const Resume: React.FC = (): JSX.Element => {
                         <h2>Framer Desinger & Developer</h2>
                         <p>Brunodee Agency</p>
                     </div>
-                    <div className="spec">
+                    <div className="spec last">
                         <span className="date">2020 - Present</span>
                         <h2>Framer Desinger & Developer</h2>
                         <p>Brunodee Agency</p>
