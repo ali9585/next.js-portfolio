@@ -5,6 +5,7 @@ import About from './components/about';
 import Resume from './components/resume';
 import Services from './components/services';
 import Skills from './components/skills';
+import Portfolio from './components/portfolio';
 
 export const Page: React.FC = (): JSX.Element => {
     return (
@@ -22,6 +23,7 @@ export const Page: React.FC = (): JSX.Element => {
                     <Resume />
                     <Services />
                     <Skills />
+                    <Portfolio />
                 </div>
             </div>
         </>

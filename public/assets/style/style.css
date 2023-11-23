@@ -463,6 +463,10 @@
     margin-top: 20px;
 }
 
+.portfolio {
+    margin-top: 130px;
+}
+
 @media (max-width: 2000px) {
     .left-sidebar-wrapper {
         width: 400px;
