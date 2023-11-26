@@ -6,6 +6,8 @@ import Resume from './components/resume';
 import Services from './components/services';
 import Skills from './components/skills';
 import Portfolio from './components/portfolio';
+import Testimonial from './components/testimonial';
+import Pricing from './components/pricing';
 
 export const Page: React.FC = (): JSX.Element => {
     return (
@@ -24,6 +26,8 @@ export const Page: React.FC = (): JSX.Element => {
                     <Services />
                     <Skills />
                     <Portfolio />
+                    <Testimonial />
+                    <Pricing />
                 </div>
             </div>
         </>
