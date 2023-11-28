@@ -31,7 +31,9 @@ const Pricing: React.FC = (): JSX.Element => {
                                 <li>Support 6 months</li>
                             </ul>
                         </div>
-                        <button className="theme-btn">Pick This Package</button>
+                        <div className="relative">
+                            <button className="theme-btn">Pick This Package</button>
+                        </div>
                     </div>
                     <div className="card">
                         <div className="status flex justify-between">
@@ -57,7 +59,9 @@ const Pricing: React.FC = (): JSX.Element => {
                                 <li>Support 6 months</li>
                             </ul>
                         </div>
-                        <button className="theme-btn">Pick This Package</button>
+                        <div className="relative">
+                            <button className="theme-btn">Pick This Package</button>
+                        </div>
                     </div>
                 </div>
                 <p className="info">
