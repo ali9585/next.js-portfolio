@@ -30,6 +30,20 @@
     z-index: 2;
 }
 
+.app-bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.app-bg-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .app-bg {
     position: fixed;
     top: 0;
@@ -37,6 +51,10 @@
     width: 100%;
     height: 100%;
     background-color: var(--app-bg-color);
+}
+
+.app-bg.transparent {
+    background-color: transparent !important;
 }
 
 .left-sidebar-wrapper {
@@ -731,7 +749,7 @@
 }
 
 .contact form input {
-    background-color: transparent;
+    background-color: #99999924;
     padding: 11px 18px;
     color: var(--text-color);
     border: 1px solid #565656;
@@ -741,7 +759,7 @@
 
 .contact form textarea {
     min-height: 115px;
-    background-color: transparent;
+    background-color: #99999924;
     padding: 11px 18px;
     color: var(--text-color);
     border: 1px solid #565656;
@@ -757,7 +775,31 @@
 
 .contact form input:focus,
 .contact form textarea:focus {
+    background-color: transparent;
     border-color: var(--app-color);
+}
+
+.contact .upload {
+    margin-top: 45px;
+    padding-bottom: 38px;
+    border-bottom: 1px solid #555555;
+}
+
+.contact .upload .inner {
+    font-size: 12px;
+    color: var(--text-color);
+    display: flex;
+    gap: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.contact .upload svg {
+    margin-top: -2px;
+}
+
+.contact .theme-btn {
+    margin-top: 60px;
 }
 
 @media (max-width: 2000px) {

@@ -1,7 +1,17 @@
+'use client';
+
+import { useRef } from "react";
 import { SectionBadge } from "@/app/utils/sectionBadge";
 import { FaPhoneAlt } from "react-icons/fa";
+import { TbCloudUpload } from "react-icons/tb";
 
 const Contact: React.FC = (): JSX.Element => {
+    const inputRef = useRef<HTMLInputElement>(null);
+
+    const toggleInput = (): void => {
+        inputRef.current?.click();
+    }
+
     return (
         <>
             <div className="contact">
@@ -17,6 +27,14 @@ const Contact: React.FC = (): JSX.Element => {
                     <input className="md:col-span-1 sm:col-span-2 col-span-2" type="text" placeholder="Subject" />
                     <textarea className="col-span-2" name="" id="" placeholder="Message"></textarea>
                 </form>
+                <div className="upload">
+                    <div className="inner" onClick={toggleInput}>
+                        <TbCloudUpload size={18} color='#fff' />
+                        Add An Attachment
+                    </div>
+                    <input ref={inputRef} className="hidden" type="file" />
+                </div>
+                <button className="theme-btn">Send Message</button>
             </div>
         </>
     );
