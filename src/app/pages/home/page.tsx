@@ -9,10 +9,12 @@ import Portfolio from './components/portfolio';
 import Testimonial from './components/testimonial';
 import Pricing from './components/pricing';
 import Contact from './components/contact';
+import RightMenu from '@/app/partials/rightMenu';
 
 export const Page: React.FC = (): JSX.Element => {
     return (
         <>
+            <RightMenu />
             <div className='left-sidebar-wrapper'>
                 <LeftSidebar />
             </div>
