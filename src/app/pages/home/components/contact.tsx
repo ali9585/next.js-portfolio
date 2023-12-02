@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import { SectionBadge } from "@/app/utils/sectionBadge";
-import { FaPhoneAlt } from "react-icons/fa";
+import { AiOutlineMail } from "react-icons/ai";
 import { TbCloudUpload } from "react-icons/tb";
 
 const Contact: React.FC = (): JSX.Element => {
@@ -15,7 +15,7 @@ const Contact: React.FC = (): JSX.Element => {
     return (
         <>
             <div className="contact">
-                <SectionBadge title="Contact" icon={<FaPhoneAlt className='icon' size={11} color='#fff' />} />
+                <SectionBadge title="Contact" icon={<AiOutlineMail className='icon' size={15} color='#fff' />} />
                 <h1 className="section-title">
                     Let's Work <span>Together!</span>
                 </h1>

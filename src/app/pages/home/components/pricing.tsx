@@ -9,7 +9,7 @@ const Pricing: React.FC = (): JSX.Element => {
                 <h1 className="section-title">
                     My <span>Pricing</span>
                 </h1>
-                <div className="grid md:grid-cols-2 sm:grid-cols-1 gap-[10px]">
+                <div className="grid md:grid-cols-2 sm:grid-cols-1">
                     <div className="card">
                         <div className="status flex justify-between">
                             <h4>Basic</h4>
