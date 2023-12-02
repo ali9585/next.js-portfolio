@@ -13,7 +13,8 @@ export const UsePageLoaderVariants = (): FramerVariants => {
             opacity: 0,
             transition: {
                 type: 'tween',
-                duration: 1
+                duration: 1.5,
+                ease: 'ease'
             }
         }
     };

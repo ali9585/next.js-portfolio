@@ -9,7 +9,7 @@ import {
 } from "react-icons/ai";
 import { LiaCommentSolid } from "react-icons/lia";
 
-const RightSideBar: React.FC = (): JSX.Element => {
+export const RightSideBar: React.FC = (): JSX.Element => {
     return (
         <>
             <ul className="right-sidebar">
@@ -49,5 +49,3 @@ const RightSideBar: React.FC = (): JSX.Element => {
         </>
     );
 }
-
-export default RightSideBar;

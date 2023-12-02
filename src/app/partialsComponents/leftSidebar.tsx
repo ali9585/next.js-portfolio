@@ -5,8 +5,7 @@ import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { GoMail } from "react-icons/go";
 import Link from 'next/link';
 
-const LeftSidebar: React.FC = (): JSX.Element => {
-
+export const LeftSidebar: React.FC = (): JSX.Element => {
     return (
         <>
             <div className='left-sidebar'>
@@ -46,5 +45,3 @@ const LeftSidebar: React.FC = (): JSX.Element => {
         </>
     );
 }
-
-export default LeftSidebar;
