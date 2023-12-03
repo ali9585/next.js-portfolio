@@ -1,4 +1,4 @@
-import { SectionBadge } from "@/app/utils/sectionBadge";
+import { SectionBadge } from "@/app/presentationLayer/utils/sectionBadge";
 import { LuUser2 } from "react-icons/lu";
 
 

@@ -17,7 +17,7 @@ export const LeftSidebar: React.FC = (): JSX.Element => {
                         Developer
                     </span>
                 </div>
-                <Image className='my-image' src={require('../../../public/assets/images/my-logo.png')} alt='me' />
+                <Image className='my-image' src={require('../assets/images/my-logo.png')} alt='me' />
                 <div className='address'>
                     <h2 className='mail'>drake@gmail.com</h2>
                     <h2 className='location'>Based in Islamabad, Pak</h2>

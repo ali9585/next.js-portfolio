@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from "react";
-import { SectionBadge } from "@/app/utils/sectionBadge";
+import { SectionBadge } from "@/app/presentationLayer/utils/sectionBadge";
 import { LiaCommentSolid } from "react-icons/lia";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 import { Carousel } from 'react-responsive-carousel';

@@ -2,10 +2,10 @@
 
 import Image from 'next/image';
 import { LiaHomeSolid } from "react-icons/lia";
-import { SectionBadge } from "@/app/utils/sectionBadge";
+import { SectionBadge } from "@/app/presentationLayer/utils/sectionBadge";
 import { GoArrowDown } from "react-icons/go";
 import { motion } from 'framer-motion';
-import { UseIntroductionVariants } from '@/app/framerVariants/introduction/useIntroductionVariants';
+import { UseIntroductionVariants } from '@/app/domainLayer/framerVariants/introduction/useIntroductionVariants';
 
 
 const Introduction: React.FC = (): JSX.Element => {
@@ -29,7 +29,7 @@ const Introduction: React.FC = (): JSX.Element => {
                     <div className='point-to-projects'>
                         <div className='spinner'>
                             <motion.div variants={framerVariants.spinnerVariants} initial='intial' animate='rotate'>
-                                <Image alt='projects' src={require('../../../../../public/assets/images/round-text.png')} />
+                                <Image alt='projects' src={require('../../../assets/images/round-text.png')} />
                             </motion.div>
                             <GoArrowDown color='#fff' size={40} style={{ position: "absolute", top: 'calc(50% + -17px)' }} />
                         </div>

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { SectionBadge } from "@/app/utils/sectionBadge";
+import { SectionBadge } from "@/app/presentationLayer/utils/sectionBadge";
 import { LiaShapesSolid } from "react-icons/lia";
 
 const Skills: React.FC = (): JSX.Element => {
@@ -22,7 +22,7 @@ const Skills: React.FC = (): JSX.Element => {
                 <div className="flex flex-col items-center">
                     <div className="item-wrapper">
                         <div className="item">
-                            <Image alt="..." src={require('../../../../../public/assets/images/laravel.png')} />
+                            <Image alt="..." src={require('../../../assets/images/laravel.png')} />
                         </div>
                     </div>
                     <p className="skill-name">Laravel</p>
@@ -30,7 +30,7 @@ const Skills: React.FC = (): JSX.Element => {
                 <div className="flex flex-col items-center">
                     <div className="item-wrapper">
                         <div className="item">
-                            <Image alt="..." src={require('../../../../../public/assets/images/laravel.png')} />
+                            <Image alt="..." src={require('../../../assets/images/laravel.png')} />
                         </div>
                     </div>
                     <p className="skill-name">Laravel</p>
@@ -38,7 +38,7 @@ const Skills: React.FC = (): JSX.Element => {
                 <div className="flex flex-col items-center">
                     <div className="item-wrapper">
                         <div className="item">
-                            <Image alt="..." src={require('../../../../../public/assets/images/laravel.png')} />
+                            <Image alt="..." src={require('../../../assets/images/laravel.png')} />
                         </div>
                     </div>
                     <p className="skill-name">Laravel</p>
@@ -46,7 +46,7 @@ const Skills: React.FC = (): JSX.Element => {
                 <div className="flex flex-col items-center">
                     <div className="item-wrapper">
                         <div className="item">
-                            <Image alt="..." src={require('../../../../../public/assets/images/laravel.png')} />
+                            <Image alt="..." src={require('../../../assets/images/laravel.png')} />
                         </div>
                     </div>
                     <p className="skill-name">Laravel</p>
@@ -54,7 +54,7 @@ const Skills: React.FC = (): JSX.Element => {
                 <div className="flex flex-col items-center">
                     <div className="item-wrapper">
                         <div className="item">
-                            <Image alt="..." src={require('../../../../../public/assets/images/laravel.png')} />
+                            <Image alt="..." src={require('../../../assets/images/laravel.png')} />
                         </div>
                     </div>
                     <p className="skill-name">Laravel</p>

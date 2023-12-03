@@ -1,8 +1,8 @@
-import { SectionBadge } from "@/app/utils/sectionBadge";
+import { SectionBadge } from "@/app/presentationLayer/utils/sectionBadge";
 import { LiaStreamSolid, LiaBezierCurveSolid } from "react-icons/lia";
 import { RiComputerLine } from "react-icons/ri";
 import { FaMobileAlt } from "react-icons/fa";
-import { styles } from "../../../../../public/assets/style/style";
+import { styles } from "@/app/presentationLayer/assets/style/style";
 
 const Services: React.FC = (): JSX.Element => {
     return (

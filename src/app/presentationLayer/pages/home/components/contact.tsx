@@ -1,7 +1,7 @@
 'use client';
 
 import { useRef } from "react";
-import { SectionBadge } from "@/app/utils/sectionBadge";
+import { SectionBadge } from "@/app/presentationLayer/utils/sectionBadge";
 import { AiOutlineMail } from "react-icons/ai";
 import { TbCloudUpload } from "react-icons/tb";
 

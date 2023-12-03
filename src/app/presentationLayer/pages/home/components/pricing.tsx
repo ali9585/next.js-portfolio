@@ -1,4 +1,4 @@
-import { SectionBadge } from "@/app/utils/sectionBadge";
+import { SectionBadge } from "@/app/presentationLayer/utils/sectionBadge";
 import { FaDollarSign } from "react-icons/fa6";
 
 const Pricing: React.FC = (): JSX.Element => {

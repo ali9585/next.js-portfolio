@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { SectionBadge } from "@/app/utils/sectionBadge";
+import { SectionBadge } from "@/app/presentationLayer/utils/sectionBadge";
 import { LiaGripVerticalSolid } from "react-icons/lia";
 
 const Portfolio: React.FC = (): JSX.Element => {

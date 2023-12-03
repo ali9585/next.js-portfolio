@@ -1,11 +1,11 @@
 import { AnimatePresence, motion } from 'framer-motion';
-import { UsePageLoaderVariants } from '../framerVariants/pageLoader/useLoaderVariants';
+import { UsePageLoaderVariants } from '@/app/domainLayer/framerVariants/pageLoader/useLoaderVariants';
 
-interface Props {
+interface PageLoaderProps {
     isLoaded: boolean
 }
 
-export const PageLoader: React.FC<Props> = ({isLoaded}): JSX.Element => {
+export const PageLoader: React.FC<PageLoaderProps> = ({isLoaded}): JSX.Element => {
     const framerVariants = UsePageLoaderVariants();
     
     return (

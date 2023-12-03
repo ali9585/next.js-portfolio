@@ -1,4 +1,4 @@
-import { SectionBadge } from "@/app/utils/sectionBadge";
+import { SectionBadge } from "@/app/presentationLayer/utils/sectionBadge";
 import { HiOutlineBriefcase } from "react-icons/hi";
 
 const Resume: React.FC = (): JSX.Element => {
