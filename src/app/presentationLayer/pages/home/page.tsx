@@ -18,7 +18,7 @@ import { InView } from 'react-intersection-observer';
 import { RootState } from '../../redux/store/store';
 import { useSelector } from 'react-redux';
 
-export const Page: React.FC = (): JSX.Element => {
+const Page: React.FC = (): JSX.Element => {
     const [isLoaded, setIsLoaded] = useState<boolean>(false);
 
     const pageSectionController = usePageSectionController();
@@ -69,3 +69,5 @@ export const Page: React.FC = (): JSX.Element => {
         </>
     );
 }
+
+export default Page;

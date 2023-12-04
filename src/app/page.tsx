@@ -1,6 +1,6 @@
 'use client';
 
-import { Page as HomePage } from './presentationLayer/pages/home/page';
+import Page from './presentationLayer/pages/home/page';
 import { store } from './presentationLayer/redux/store/store';
 import { Provider } from 'react-redux';
 
@@ -15,7 +15,7 @@ const Home: React.FC = (): JSX.Element => {
         </video>
       </div> */}
         <div className='app-bg'></div>
-        <HomePage />
+        <Page />
       </Provider>
     </>
   );
