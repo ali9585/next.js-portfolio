@@ -30,19 +30,16 @@ export const usePageSectionController = (): ReturnedData => {
                 dispatch(redux.disableScroll());
             
             dispatch(redux.changePageSection(index));
+
+            setTimeout(() => {
+                dispatch(redux.enableScroll());
+            }, 550)
         }
     }
 
     const updateSectionIndex = (index: number): void => {
         dispatch(redux.changePageSection(index));
     }
-
-    useEffect(() => {
-        window.addEventListener('scrollend', () => {
-            if (!pageScroll)
-                dispatch(redux.enableScroll());
-        })
-    }, [])
 
     return {
         updateSection,

@@ -20,51 +20,35 @@ export const RightSideBar: React.FC = (): JSX.Element => {
     const links = [
         {
             label: 'Home',
-            icon: (isActive: boolean) => {
-                return (<AiOutlineHome size={19} color={isActive ? '#28e98c' : '#999999'} />);
-            }
+            icon: <AiOutlineHome size={19} color='#999999' />
         },
         {
             label: 'About',
-            icon: (isActive: boolean) => {
-                return (<AiOutlineUser size={19} color={isActive ? '#28e98c' : '#999999'} />);
-            }
+            icon: <AiOutlineUser size={19} color='#999999' />
         },
         {
             label: 'Resume',
-            icon: (isActive: boolean) => {
-                return (<AiOutlineContainer size={19} color={isActive ? '#28e98c' : '#999999'} />);
-            }
+            icon: <AiOutlineContainer size={19} color='#999999' />
         },
         {
             label: 'Services',
-            icon: (isActive: boolean) => {
-                return (<AiOutlineAlignRight size={19} color={isActive ? '#28e98c' : '#999999'} />);
-            }
+            icon: <AiOutlineAlignRight size={19} color='#999999' />
         },
         {
             label: 'Skills',
-            icon: (isActive: boolean) => {
-                return (<AiOutlineMan size={19} color={isActive ? '#28e98c' : '#999999'} />);
-            }
+            icon: <AiOutlineMan size={19} color='#999999' />
         },
         {
             label: 'Portfolio',
-            icon: (isActive: boolean) => {
-                return (<AiOutlineLaptop size={19} color={isActive ? '#28e98c' : '#999999'} />);
-            }
+            icon: <AiOutlineLaptop size={19} color='#999999' />
         },
         {
             label: 'Testimonial',
-            icon: (isActive: boolean) => {
-                return (<LiaCommentSolid size={19} color={isActive ? '#28e98c' : '#999999'} />);
-            }
+            icon: <LiaCommentSolid size={19} color='#999999' />
         },
         {
             label: 'Contact',
-            icon: (isActive: boolean) => {
-                return (<AiOutlineMail size={19} color={isActive ? '#28e98c' : '#999999'} />);
-            }
+            icon: <AiOutlineMail size={19} color='#999999' />
         },
     ]
 
@@ -72,8 +56,8 @@ export const RightSideBar: React.FC = (): JSX.Element => {
         <>
             <ul className="right-sidebar">
                 {links.map((link, index) => (
-                    <li onClick={() => pageSectionController.updateSection(index)} key={index}>
-                        {link.icon(pageSection === index ? true : false)}
+                    <li className={`${pageSection === index ? 'active' : ''}`} onClick={() => pageSectionController.updateSection(index)} key={index}>
+                        {link.icon}
                         <span>{link.label}</span>
                     </li>
                 ))}

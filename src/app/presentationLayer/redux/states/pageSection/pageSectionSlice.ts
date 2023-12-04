@@ -7,7 +7,7 @@ interface PageSectionState {
 
 const initialState: PageSectionState = {
     current: 0,
-    pageScroll: false
+    pageScroll: true
 };
 
 const pageSectionSlice = createSlice({
