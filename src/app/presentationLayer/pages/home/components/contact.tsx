@@ -17,7 +17,7 @@ const Contact: React.FC = (): JSX.Element => {
             <div className="contact">
                 <SectionBadge title="Contact" icon={<AiOutlineMail className='icon' size={15} color='#fff' />} />
                 <h1 className="section-title">
-                    Let's Work <span>Together!</span>
+                    Let&apos;s Work <span>Together!</span>
                 </h1>
                 <h3 className="mail">alikhan@hello.com</h3>
                 <form className="grid gap-[20px]">

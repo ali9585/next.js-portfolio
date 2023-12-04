@@ -65,7 +65,7 @@ const Pricing: React.FC = (): JSX.Element => {
                     </div>
                 </div>
                 <p className="info">
-                    Don't find any package match with your plan!<br />
+                    Don&apos;t find any package match with your plan!<br />
                     Want to setup a new tailor-made package for only you?. <span>Contact Us</span>
                 </p>
             </div>

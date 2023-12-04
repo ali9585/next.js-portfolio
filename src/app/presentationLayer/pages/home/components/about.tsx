@@ -12,7 +12,7 @@ const About: React.FC = (): JSX.Element => {
                     an even <span>better story</span>
                 </h1>
                 <p className="description">
-                    Since beginning my journey as a freelance designer nearly 8 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chopsone design problem at a time.
+                    Since beginning my journey as a freelance designer nearly 8 years ago, I&apos;ve done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I&apos;m quietly confident, naturally curious, and perpetually working on improving my chopsone design problem at a time.
                 </p>
             </div>
         </>
